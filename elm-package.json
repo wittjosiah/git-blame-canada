@@ -1,7 +1,7 @@
 {
     "version": "0.1.1",
     "summary": "Git history for JT",
-    "repository": "https://github.com/wittjosiah/git-politic",
+    "repository": "https://github.com/wittjosiah/git-politic.git",
     "license": "BSD3",
     "source-directories": [
         "."
