@@ -2,6 +2,7 @@ module Log where
 
 import Html exposing (..)
 import Html.Attributes exposing (style)
+import Signal exposing (Address)
 import Date exposing (Date)
 import Date.Format exposing (format)
 import String exposing (append)
@@ -17,10 +18,19 @@ type alias Entry =
   , hash : String
   }
 
+-- UPDATE
+
+type Action = Nothing
+
+update : Action -> Model -> Model
+update action model =
+  case action of
+    Nothing -> model
+
 -- VIEW
 
-view : Model -> Html
-view model =
+view : Address Action -> Model -> Html
+view address model =
   section [ mainStyle ]
     (List.map entryView model)
 
@@ -45,6 +55,7 @@ mainStyle =
   style
     (font ++
     [ ("margin", "20px 0 0 20px")
+    , ("background-color", "black")
     ])
 
 hashStyle : Attribute
