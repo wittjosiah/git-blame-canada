@@ -1,7 +1,11 @@
-import Log exposing (view)
+import Log exposing (view, update)
 import Entries exposing (allEntries)
-import Html exposing (Html)
+import StartApp.Simple exposing (start)
 
-main : Html
-main = view allEntries
+main =
+  start
+    { model = allEntries
+    , update = update
+    , view = view
+    }
 
