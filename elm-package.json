@@ -1,7 +1,7 @@
 {
-    "version": "1.0.0",
-    "summary": "helpful summary of your project, less than 80 characters",
-    "repository": "https://github.com/USER/PROJECT.git",
+    "version": "0.1.1",
+    "summary": "Git history for JT",
+    "repository": "https://github.com/wittjosiah/git-politic",
     "license": "BSD3",
     "source-directories": [
         "."
