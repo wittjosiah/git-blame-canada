@@ -47,7 +47,7 @@ footerView =
 displayAbout _ hash length =
   section []
     [ headerView "git blame about"
-    , section [ class "about" ] [ text "Git history of Justin Trudeau's time in office" ]
+    , section [ class "about" ] [ text "A git history of Justin Trudeau's time in office" ]
     , footerView
     ]
 
