@@ -1,7 +1,15 @@
-module Entries where
+module Models where
 
-import Log exposing (Entry)
-import Date exposing (fromTime)
+import Date exposing (Date, fromTime)
+
+type alias Model = List Entry
+
+type alias Entry =
+  { user : String
+  , description : String
+  , date : Date
+  , hash : String
+  }
 
 allEntries = 
   [ 
